@@ -7,8 +7,8 @@ import joblib
 app = Flask(__name__)
 
 # Load trained models and scaler
-status_model = joblib.load("models/pan_classifier.pkl")
-scaler = joblib.load("models/scaler.pkl")
+status_model = joblib.load("pan_classifier.pkl")
+scaler = joblib.load("scaler.pkl")
 
 @app.route("/", methods=["GET"])
 def home():
